@@ -10,6 +10,9 @@ local zombiemode = false
 local zombies = {}
 local lastgui = nil
 local mouse = player:GetMouse()
+local meleeEvent = Instance.new("RemoteEvent")
+meleeEvent.Name = "meleeEvent"
+meleeEvent.Parent = game.ReplicatedStorage
 
 function getplr(char)
     local plr = nil
